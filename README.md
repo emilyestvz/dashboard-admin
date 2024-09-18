@@ -27,7 +27,9 @@ Repositório do projeto Dashboard Admin, um painel administrativo moderno e resp
 ## Estrutura do Projeto
 
 `index.html` - Página principal do dashboard.
+
 `style.css` - Estilos personalizados do dashboard.
+
 `img/` - Contém imagens, ícones e outros arquivos de mídia.
 
 ### Contribuição
