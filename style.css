@@ -1,3 +1,72 @@
+/* --------- Responsividade --------- */
+
+/* Layout para tablets e telas menores */
+@media (max-width: 1024px) {
+    .main-content {
+        grid-template-columns: 1fr; /* Uma única coluna */
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+    }
+
+    /* Ajusta os projetos para ficarem em uma única coluna */
+    .content-projects {
+        grid-template-columns: 1fr;
+    }
+
+    /* Anúncios abaixo dos projetos */
+    #projects {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #announcements {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    /* Trends abaixo dos anúncios */
+    #trending {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+}
+
+/* Layout para dispositivos móveis (telefones) */
+@media (max-width: 600px) {
+    .main-content {
+        padding: 20px 10px; /* Reduzir padding em telas pequenas */
+    }
+
+    /* Projetos, anúncios e trends ficam em uma coluna */
+    .content-projects {
+        grid-template-columns: 1fr;
+        gap: 15px; /* Aumenta o espaço entre projetos */
+    }
+
+    #projects, #announcements, #trending {
+        grid-column: 1 / 2;
+        grid-row: auto;
+    }
+
+    /* Ajuste do texto, botões e imagens para telas pequenas */
+    .header-search input {
+        width: 100%; /* Barra de busca responsiva */
+    }
+
+    .header-profile img, .header-welcome img, .project-buttons img {
+        width: 25px; /* Imagens menores */
+    }
+
+    .project-text h3 {
+        font-size: 1.2rem; /* Texto do título menor */
+    }
+
+    .project-body {
+        font-size: 0.9rem; /* Texto do corpo menor */
+    }
+}
+
+
 /*Configurações gerais*/
 * {
     box-sizing: border-box;
